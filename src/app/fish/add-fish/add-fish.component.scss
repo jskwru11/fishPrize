@@ -1,0 +1,89 @@
+.grid-container {
+    height: 100vh;
+    display: grid;
+    gap: 1rem;
+    // grid-template-columns: [side-start] min-content [control-start footer-start form-start ] repeat(3, minmax([col-start] min-content, 1fr [col-end]));
+    grid-template-columns: [side-start] min-content [control-start footer-start form-start side-end] repeat(3, [col-start] 1fr [col-end]);
+    grid-template-rows: [row-start1 ] .5fr [row-end1 row-start2 ] 3fr [row-end2 row-start3 ] .5fr [row-end3];
+}
+
+.card-form {
+    box-shadow: var(--shadow);
+    grid-column: form-start / col-end 2;
+    grid-row: row-start2 / row-end2;
+
+    &__header {
+        text-align: left;
+        font-size: 1.7rem;
+    }
+}
+
+.control-panel {
+    grid-column: control-start / col-end 3;
+    grid-row: row-start1 / row-end1;
+}
+
+.sidebar {
+    grid-column: side-start / side-end;
+    grid-row: row-start1 / row-end3;
+
+    font-size: 2rem;
+    color: var(--dark-color);
+    box-shadow: var(--shadow);
+    background:var(--primary-color);
+    grid-column: 1 / 2;
+    grid-row: 1 / 7;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+        &item {
+            list-style: none;
+            transition: all 200ms ease-in;
+            padding: 1rem 1.5rem;
+            border-left: 6px solid transparent;
+            cursor: pointer;
+
+            &:first-child {
+                margin-bottom:2rem;
+            }
+
+            &:hover {
+                background-color:var(--clr-gray150);
+                }
+
+            a {
+                text-decoration: none;
+                display: flex;
+                gap:1rem;
+                align-items: center;
+                color:var(--clr-gray400);
+                font-weight:500;
+            }
+
+            svg {
+                fill:var(--clr-gray400);
+                width:2rem;
+                }
+
+            &-active {
+                background-color:var(--clr-gray200);
+                border-left: 6px solid var(--clr-primary);
+        
+                svg,p {
+                    color: var(--clr-primary);
+                    fill: var(--clr-primary);
+                }
+            }
+        
+        }
+    }
+
+    
+}
+
+.footer {
+    grid-row: row-start3 / row-end3;
+    grid-column: footer-start / col-end 3;
+}

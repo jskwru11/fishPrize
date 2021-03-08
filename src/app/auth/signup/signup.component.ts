@@ -28,11 +28,13 @@ export class SignupComponent implements OnInit {
 
   onSignup() {
     this.as.signup(this.signupForm.value)
-      .subscribe(v => {
-        console.log(v);
+      .subscribe(userData => {
+        if (userData.status === 'fail') return new Error('Unable to signup new user.  Please try again.');
+
+        this.router.navigate(['dashboard']);
       });
 
-      this.router.navigate(['/dashboard']);
+      
   }
 
 }

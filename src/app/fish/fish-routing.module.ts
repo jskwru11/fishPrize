@@ -10,7 +10,7 @@ const routes: Routes = [
     path: '', component: DisplayFishComponent
   },
   {
-    path: 'add', component: AddFishComponent
+    path: 'new', component: AddFishComponent
   }
 ];
 

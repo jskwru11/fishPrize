@@ -58,16 +58,16 @@
     </nav>
   </div>
   <section class="top-section">
-    <div class="box-card">
-      Hello World-1
+    <div [routerLink]="['/fish/new']" class="top-section__card">
+      Add Fish
     </div>
-    <div class="box-card">
+    <div class="top-section__card">
       Hello World-2
     </div>
-    <div class="box-card">
+    <div class="top-section__card">
       Hello World-3
     </div>
-    <div class="box-card">
+    <div class="top-section__card">
       Hello World-4
     </div>
   </section>
@@ -75,7 +75,7 @@
     <div echarts [options]="options" class="demo-chart"></div>
   </section>
   <section class="projection-section">
-    <div class="jumbotron">
+    <div class="jumbotron jtron">
       <h1 class="display-3">Hello, world!</h1>
       <p class="lead">This is a simple hero unit, a simple jumbotron-style component for
                       calling extra attention to featured content or information.</p>
@@ -88,7 +88,7 @@
     </div>
   </section>
   <section class="posts-section">
-    <div class="card">
+    <div class="card cards">
       <img class="card-img-top" src="https://source.unsplash.com/random/50x50" alt="Card image cap">
       <div class="card-body">
         <h4 class="card-title">Card title</h4>
@@ -99,7 +99,7 @@
         <a href="#!" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
-    <div class="card">
+    <div class="card cards">
       <img class="card-img-top" src="https://source.unsplash.com/random/50x51" alt="Card image cap">
       <div class="card-body">
         <h4 class="card-title">Card title</h4>
@@ -110,7 +110,7 @@
         <a href="#!" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
-    <div class="card">
+    <div class="card cards">
       <img class="card-img-top" src="https://source.unsplash.com/random/50x52" alt="Card image cap">
       <div class="card-body">
         <h4 class="card-title">Card title</h4>
@@ -123,7 +123,7 @@
     </div>
   </section>
   <section class="illustrations-section">
-    <table class="table">
+    <table class="table illustration__table">
       <thead>
         <tr>
           <th>#</th>
@@ -146,14 +146,14 @@
     </table>
   </section>
   <section class="gallery-section">
-    <img src="https://source.unsplash.com/random/200x200" class="img-fluid" alt="Responsive image">
-    <img src="https://source.unsplash.com/random/200x201" class="img-fluid" alt="Responsive image">
-    <img src="https://source.unsplash.com/random/200x202" class="img-fluid" alt="Responsive image">
-    <img src="https://source.unsplash.com/random/200x203" class="img-fluid" alt="Responsive image">
-    <img src="https://source.unsplash.com/random/200x204" class="img-fluid" alt="Responsive image">
-    <img src="https://source.unsplash.com/random/200x205" class="img-fluid" alt="Responsive image">
-    <img src="https://source.unsplash.com/random/200x206" class="img-fluid" alt="Responsive image">
-    <img src="https://source.unsplash.com/random/200x207" class="img-fluid" alt="Responsive image">
+    <img src="https://source.unsplash.com/random/200x200" class="img-fluid gallery-section__img" alt="Responsive image">
+    <img src="https://source.unsplash.com/random/200x201" class="img-fluid gallery-section__img" alt="Responsive image">
+    <img src="https://source.unsplash.com/random/200x202" class="img-fluid gallery-section__img" alt="Responsive image">
+    <img src="https://source.unsplash.com/random/200x203" class="img-fluid gallery-section__img" alt="Responsive image">
+    <img src="https://source.unsplash.com/random/200x204" class="img-fluid gallery-section__img" alt="Responsive image">
+    <img src="https://source.unsplash.com/random/200x205" class="img-fluid gallery-section__img" alt="Responsive image">
+    <img src="https://source.unsplash.com/random/200x206" class="img-fluid gallery-section__img" alt="Responsive image">
+    <img src="https://source.unsplash.com/random/200x207" class="img-fluid gallery-section__img" alt="Responsive image">
   </section>
   <footer class="footer">
     For your eyes only &copy; 2021
